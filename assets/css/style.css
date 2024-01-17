@@ -1,0 +1,163 @@
+@media (prefers-reduced-motion: no-preference) {
+  :has(:target) {
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+  }
+}
+@font-face {
+  font-family: worksans;
+  src: url(../fonts/static/WorkSans-Regular.ttf);
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: worksans;
+  font-weight: 400;
+  transition: all 0.6s ease;
+}
+
+:root {
+  font-size: 62.5%;
+  --fs-regular: clamp(1.6rem, 0.5vw + 1.6rem, 2rem);
+  --fs-p: clamp(1.6rem, 0.2vw + 1.6rem, 2rem);
+  --fs-medium: clamp(2.4rem, 0.4vw + 2.4rem, 3.2rem);
+  --fc-heading: #ebccc2;
+  --fc-regular: #737373;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #2e2e2e;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-wrap: balance;
+  color: var(--fc-heading);
+}
+
+h1 {
+  color: var(--fc-heading);
+}
+
+p {
+  max-width: 62ch;
+  text-wrap: pretty;
+  color: var(--fc-regular);
+  line-height: 150%;
+  font-size: var(--fs-p);
+}
+
+a {
+  text-decoration: none;
+  color: var(--fc-regular);
+}
+
+li {
+  list-style: none;
+}
+
+.nav_top {
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 2.35%;
+  position: sticky;
+  top: 5%;
+  z-index: 1;
+}
+
+.nav_link_wrapper {
+  display: flex;
+  justify-content: flex-end;
+  gap: 9%;
+}
+
+.nav_top_link {
+  font-size: var(--fs-regular);
+  white-space: nowrap;
+  color: #867772;
+}
+
+.nav_top_link:hover {
+  color: var(--fc-heading);
+  text-decoration: underline;
+}
+
+.nav_link_last {
+  margin-right: unset;
+}
+
+.nav_aside {
+  position: sticky;
+  z-index: 1;
+  top: 25%;
+  margin-left: 1.5%;
+}
+
+.nav_aside_wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.big_circle {
+  height: clamp(3rem, 0.5vw + 3rem, 6rem);
+  width: clamp(3rem, 0.5vw + 3rem, 6rem);
+  border-radius: 50%;
+  border: 0.3rem solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small_circle {
+  height: clamp(1.3rem, 0.2vw + 1.3rem, 2.6rem);
+  width: clamp(1.3rem, 0.2vw + 1.3rem, 2.6rem);
+  border-radius: 50%;
+  border: 0.1rem solid var(--fc-regular);
+}
+
+.nav_line {
+  width: 0.1rem;
+  height: 5rem;
+  background-color: var(--fc-regular);
+}
+
+.nav_left_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav_aside_link {
+  padding: 0.5% 0 0 2%;
+  font-size: var(--fs-regular);
+  color: var(--fc-regular);
+  text-transform: uppercase;
+}
+
+.nav_aside_link:hover {
+  color: white;
+}
+
+.circle_active {
+  border: 0.3rem solid #fafafa;
+}
+
+.link_active {
+  color: white;
+}

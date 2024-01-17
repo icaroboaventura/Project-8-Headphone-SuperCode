@@ -1,0 +1,72 @@
+.inspiration_wrapper {
+  margin-top: -30rem;
+  margin-left: 20%;
+  margin-right: 6.9%;
+}
+
+.inspiration_hero {
+  margin-bottom: 11.045%;
+}
+
+.inspiration_video {
+  margin-bottom: 2.9%;
+}
+
+.inspiration_h1 {
+  font-size: clamp(1.9rem, 0.2vw + 1.9rem, 2.6rem);
+}
+
+.inspiration_h1 span {
+  display: block;
+  font-size: clamp(4rem, 0.3vw + 4rem, 5.5rem);
+  margin-top: 1.47%;
+  margin-bottom: 2.95%;
+}
+
+main {
+  padding-bottom: 14.22%;
+}
+
+.fake_btn_wrapper {
+  display: flex;
+  margin-bottom: 1.9%;
+  gap: 0.5%;
+}
+
+.inspiration_fake_btn {
+  font-size: var(--fs-p);
+  padding: 0.5% 2.5%;
+  border: 0.1rem solid white;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+}
+
+.sound_section {
+  margin-right: 17.9%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+
+.sound_article {
+  padding-left: 3.34%;
+  padding-bottom: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sound_reverse {
+  padding-left: unset;
+  padding-right: 3.34%;
+}
+
+.sound_h2 {
+  font-size: clamp(1.9rem, 0.2vw + 1.9rem, 2.6rem);
+}
+
+.sound_h2 span {
+  font-size: var(--fs-medium);
+  display: block;
+  margin-top: 3.8%;
+  margin-bottom: 4.78%;
+}

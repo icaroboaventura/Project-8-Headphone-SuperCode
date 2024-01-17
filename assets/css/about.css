@@ -1,0 +1,44 @@
+header {
+  margin-top: -25rem;
+  margin-inline: 4.87%;
+}
+.about_background {
+  margin-top: 7.8%;
+  min-height: 220svh;
+  background: url(../img/section-about-1.jpg) no-repeat center top -10%;
+  background-size: cover;
+}
+
+.about_h1 {
+  font-size: var(--fs-medium);
+  margin-left: 30%;
+  max-width: 20ch;
+}
+
+.alchemy_section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 6.5%;
+  margin-inline: 15%;
+  margin-block: 8.6%;
+}
+
+.alchemy_article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.alchemy_h2 {
+  font-size: var(--fs-medium);
+  text-transform: uppercase;
+  margin-bottom: 4.2%;
+}
+
+.alchemy_p {
+  margin-bottom: 4.5%;
+}
+
+.alchemy_article p {
+  max-width: 60rem;
+}
